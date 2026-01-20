@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Semangat Pramuka!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div id="box-kado" class="card active">
+            <div class="gift-icon">🎁</div>
+            <h2>Ada Pesan Rahasia!</h2>
+            <p>Klik kado ini untuk menghilangkan rasa ngantuk kalian!</p>
+            <button class="btn-main" onclick="tampilkanKejutan()">Buka Sekarang ✨</button>
+        </div>
+
+        <div id="konten-utama" class="card">
+            <h1 class="glow-text">SALAM PRAMUKA! ⚜️</h1>
+            <div class="frame-foto">
+                <img src="BS.jpg" alt="Pramuka Lucu">
+            </div>
+            <div class="pesan-area">
+                <p id="teks-semangat"></p>
+            </div>
+            <button class="btn-ulang" onclick="location.reload()">Putar Lagi</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
